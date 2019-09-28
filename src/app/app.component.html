@@ -1,0 +1,13 @@
+<h1>Django REST API with Angular 7 File Upload Example</h1>
+<div>
+  <div >
+    <img [src]='imageURL' />
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <input type="file" formControlName="pofile"(change)="onChange($event)" />
+    <button type="submit">Upload Image File</button>
+
+  </form>
+</div>
